@@ -130,26 +130,6 @@ const Services = () => {
             );
           })}
         </div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          className="text-center mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-[#F8F9FA]/70 mb-6">
-            Ready to transform your business with our expert solutions?
-          </p>
-          <motion.button
-            className="bg-gradient-to-r from-[#f9ba01] to-[#f9ba01]/80 text-[#0A0F1C] font-semibold px-8 py-4 rounded-xl hover:from-[#f9ba01]/90 hover:to-[#f9ba01]/70 transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Schedule a Consultation
-          </motion.button>
-        </motion.div>
       </div>
     </section>
   );

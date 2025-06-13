@@ -33,12 +33,6 @@ const Footer = () => {
     { icon: Github, href: '#', label: 'GitHub' },
   ];
 
-  const contactInfo = [
-    { icon: Mail, text: 'hello@intelliteq.com' },
-    { icon: Phone, text: '+1 (555) 123-4567' },
-    { icon: MapPin, text: 'San Francisco, CA' },
-  ];
-
   return (
     <footer className="relative border-t border-white/10">
       <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C]/95 to-[#0D1321]/95 backdrop-blur-sm"></div>
@@ -64,19 +58,6 @@ const Footer = () => {
             <p className="text-[#F8F9FA]/70 leading-relaxed">
               Transforming businesses through intelligent technology solutions and innovative digital experiences.
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-3">
-              {contactInfo.map((item, index) => {
-                const IconComponent = item.icon;
-                return (
-                  <div key={index} className="flex items-center space-x-3 text-sm text-[#F8F9FA]/70">
-                    <IconComponent className="w-4 h-4 text-[#f9ba01]" />
-                    <span>{item.text}</span>
-                  </div>
-                );
-              })}
-            </div>
           </motion.div>
 
           {/* Company Links */}
@@ -145,34 +126,6 @@ const Footer = () => {
             </ul>
           </motion.div>
         </div>
-
-        {/* Newsletter Signup */}
-        <motion.div
-          className="mb-12 p-8 rounded-2xl bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-sm border border-white/10"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-[#F8F9FA] mb-4">
-              Stay Updated
-            </h3>
-            <p className="text-[#F8F9FA]/70 mb-6 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest technology insights and updates.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-white/5 border border-white/20 text-[#F8F9FA] placeholder:text-[#F8F9FA]/50 focus:border-[#f9ba01] focus:ring-1 focus:ring-[#f9ba01]/20 focus:outline-none"
-              />
-              <button className="px-6 py-3 bg-gradient-to-r from-[#f9ba01] to-[#f9ba01]/80 text-[#0A0F1C] font-semibold rounded-lg hover:from-[#f9ba01]/90 hover:to-[#f9ba01]/70 transition-all duration-300">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Bottom Section */}
         <motion.div
