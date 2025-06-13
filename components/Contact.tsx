@@ -29,13 +29,7 @@ const Contact = () => {
       title: 'Call Us',
       value: '+1 (555) 123-4567',
       description: 'Mon-Fri from 8am to 6pm',
-    },
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      value: 'San Francisco, CA',
-      description: 'Come say hello at our office',
-    },
+    }
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
